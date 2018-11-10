@@ -10,7 +10,7 @@ var pusher = require( 'rm-webhook' ).pushStatic;
 var pushOptions = Object.assign( {
   baseDomain: 'webhook-assets.risd.systems',
   staticFolder: 'upload',
-  staticPrefix: `generator/${ version }`,
+  staticPrefix: `generator/v${ version }`,
 }, options )
 
 pusher( pushOptions, function ( error ) {

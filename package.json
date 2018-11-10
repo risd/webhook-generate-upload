@@ -7,7 +7,7 @@
     "clone": "git clone https://github.com/risd/webhook-generate.git generator",
     "zip": "zip-dir generator base-generate.zip",
     "mv": "mkdir -p upload && mv base-generate.zip upload",
-    "upload": "rm-gcloud-put-dir upload --siteName=webhook-assets.risd.systems",
+    "upload": "node upload.js --debug",
     "clean": "rm -rf {generator,upload}",
     "clone-zip-upload": "npm run clean && npm run clone && npm run zip && npm run mv && npm run upload && npm run clean",
     "start": "npm run clone-zip-upload"
@@ -16,6 +16,6 @@
   "license": "ISC",
   "dependencies": {
     "adm-zip-dir": "^1.0.0",
-    "rm-gcloud-put-dir": "^1.0.4"
+    "rm-webhook": "^1.1.9"
   }
 }

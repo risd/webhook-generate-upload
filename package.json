@@ -1,6 +1,6 @@
 {
-  "name": "webhook-generate-upload",
-  "version": "1.0.0",
+  "name": "@risd/webhook-generate-upload",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {

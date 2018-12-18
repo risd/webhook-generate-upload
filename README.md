@@ -1,3 +1,7 @@
+# Deprecation notice.
+
+This repository is no longer being used. Instead https://github.com/risd/webhook will download webook-generate packages (such as [@risd/webhook-generate](https://www.npmjs.com/package/@risd/webhook-generate)) from npm, and untar them in order to create and update sites.
+
 # webhook-generate-upload
 
 Series of npm scripts to clone the [`risd/webhook-generate`][risd-webhook-generate] repo, zip, and upload to a Google Cloud Storage bucket. The generate zip file will be available at http://webhook-assets.risd.systems/generator.zip.
